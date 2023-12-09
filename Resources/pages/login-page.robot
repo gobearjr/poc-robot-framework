@@ -6,23 +6,27 @@ Library    AppiumLibrary
 ${EMAIL_FIELD}          xpath=//android.widget.EditText[@content-desc="test-Username"]
 ${PASSWORD_FIELD}      xpath=//android.widget.EditText[@content-desc="test-Password"]
 ${LOGIN_BUTTON}        xpath=//android.view.ViewGroup[@content-desc="test-LOGIN"]
+${ERROR_LOGIN}        xpath=//android.widget.TextView[@text="Username and password do not match any user in this service."]
 ${HOME_PRODUCT}        xpath=//android.widget.TextView[@text="PRODUCTS"]
 ${DRAWER_MENU}        xpath=//android.view.ViewGroup[@content-desc="test-Menu"]/android.view.ViewGroup/android.widget.ImageView
 ${LOGOUT_BUTTON}        xpath=//android.view.ViewGroup[@content-desc="test-LOGOUT"]
 
 *** Keywords ***
-Sign in
-    [Arguments]    ${USERNAME}    ${USER_PASSWORD}
+I try to Sign in
+    [Arguments]    ${USERNAME}    ${PASSWORD}
     Input Text        ${EMAIL_FIELD}    ${USERNAME}   
-    Input Password     ${PASSWORD_FIELD}    ${USER_PASSWORD}
+    Input Password     ${PASSWORD_FIELD}    ${PASSWORD}
     Click Element                 ${LOGIN_BUTTON}
 
-Verify Successfully Login
+I am on home page
     AppiumLibrary.Wait Until Page Contains Element   ${HOME_PRODUCT}
 
-Sign out
+I see failed login pop up
+    AppiumLibrary.Wait Until Page Contains Element   ${ERROR_LOGIN}
+
+I try to Sign out
     Click Element    ${DRAWER_MENU}
     Click Element    ${LOGOUT_BUTTON}
 
-Verify Successfully Logout
+I am on login page
     AppiumLibrary.Wait Until Page Contains Element    ${LOGIN_BUTTON}
