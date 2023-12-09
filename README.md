@@ -68,4 +68,4 @@ To running the test, please follow this steps:
 - https://github.com/gobearjr
 
 ## Evidence Test <a name = "proof"></a>
-![](Proof/proof.gif)
+![](Proof/final-proof.gif)
