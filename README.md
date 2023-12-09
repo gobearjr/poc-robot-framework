@@ -65,7 +65,7 @@ To running the test, please follow this steps:
 - [Appium](https://appium.io/) - Library Automation
 
 ## ✍️ Authors <a name = "authors"></a>
-- @gobearjr
+- https://github.com/gobearjr
 
 ## Evidence Test <a name = "proof"></a>
 ![](Proof/proof.gif)
