@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=300px height=169px src="https://icehousecorp.com/wp-content/uploads/2022/07/robot-f-300x169.png" alt="Project logo"></a>
+ <img width=300px height=169px src="https://res.cloudinary.com/practicaldev/image/fetch/s--aLMLGcII--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/xgrx36xi5jexzmlugxg5.png" alt="Project logo"></a>
 </p>
 
 <h3 align="center">Automation Appium With Robot Framework</h3>
@@ -54,7 +54,7 @@ To running the test, please follow this steps:
     ```
 - Finally, you can start the test using:
     ```
-    robot -d Output --loglevel TRACE Tests/login-test.robot
+    robot -d Result --loglevel TRACE Tests/login-test.robot
     ```
 
 
@@ -65,6 +65,7 @@ To running the test, please follow this steps:
 - [Appium](https://appium.io/) - Library Automation
 
 ## ✍️ Authors <a name = "authors"></a>
+- @gobearjr
 
-## Evidence Test <a name = "evidence"></a>
-![](Evidence/evidence.gif)
+## Evidence Test <a name = "proof"></a>
+![](Proof/proof.gif)

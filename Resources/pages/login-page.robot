@@ -8,7 +8,7 @@ ${PASSWORD_FIELD}      xpath=//android.widget.EditText[@content-desc="test-Passw
 ${LOGIN_BUTTON}        xpath=//android.view.ViewGroup[@content-desc="test-LOGIN"]
 ${HOME_PRODUCT}        xpath=//android.widget.TextView[@text="PRODUCTS"]
 ${DRAWER_MENU}        xpath=//android.view.ViewGroup[@content-desc="test-Menu"]/android.view.ViewGroup/android.widget.ImageView
-${LOGOUT_BUTTON}        xpath=//android.widget.TextView[@text="LOGOUT"]
+${LOGOUT_BUTTON}        xpath=//android.view.ViewGroup[@content-desc="test-LOGOUT"]
 
 *** Keywords ***
 Sign in
